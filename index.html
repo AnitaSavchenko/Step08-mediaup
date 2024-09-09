@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа-контент на сайте</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <video src="video/move.mp4#t=9,15" controls muted loop poster="img/poster.png"></video>
+        <button onclick="playSound()">Послушай песню</button>
+        <audio id="click-sound" src="audio/audio.mp3"></audio>
+    </div>
+    <script>
+        function playSound() {
+            document.getElementById('click-sound').play();
+            }
+    </script>
+</body>
+</html>
